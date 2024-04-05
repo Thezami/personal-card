@@ -1,0 +1,147 @@
+body {
+    font-family: 'Reddit Mono', Arial;
+    font-weight: 500;
+    color: white;
+    background-color: #171738;
+    width: 100%;
+
+}
+
+
+.card-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    background-color: #263668;
+    width: 350px;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    transition: height 1s;
+}
+
+.header {
+    /* background-color: lightgoldenrodyellow; */
+    min-height: 100px;
+    height: 40%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gif {
+    position: absolute;
+    height: 200px;
+    top: -50px;
+}
+
+.home {
+    position: absolute;
+    height: 1em;
+    margin: 3px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.user-identity {
+    /* background-color: aqua; */
+    display: inline-flex;
+    position: absolute;
+    padding: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+    width: max-content;
+    bottom: 3px;
+    right: 3px;
+}
+
+.user-name {
+    /* background-color: red; */
+    font-size: 1.5rem;
+}
+
+
+.user-subname {
+    font-size: 0.85rem;
+}
+
+
+
+.subheader-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 4px;
+
+    background-color: 0;
+    height: 20%;
+}
+
+.subheader-button {
+    background-color: rgb(128, 128, 128);
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 700;
+    padding: 8px 16px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    white-space: nowrap;
+}
+
+.subheader-button:hover {
+    background-color: #31488d;
+}
+
+.subheader-info {
+    box-sizing: border-box;
+    font-size: 0.6rem;
+    padding: 5px;
+    border: 1px solid #66481b;
+    border-style: dashed;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.last-update {
+    font-size: 0.47rem;
+    margin: 5px 0 2px 0;
+    display: inline-flex;
+    justify-content: end;
+    gap: 3px;
+}
+
+.credit {
+    font-size: 0.55rem;
+    display: flex;
+    justify-content: end;
+    margin: 28px 0 0px 0;
+}
+
+.display-none {
+    display: none;
+}
+
+
+.fade-in-visible {
+    opacity: 1;
+}
