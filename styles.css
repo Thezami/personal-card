@@ -135,6 +135,7 @@ body {
     display: flex;
     justify-content: end;
     margin: 28px 0 0px 0;
+    gap: 2px;
 }
 
 .display-none {
@@ -144,4 +145,9 @@ body {
 
 .fade-in-visible {
     opacity: 1;
+}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer
 }
